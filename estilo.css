@@ -1,0 +1,194 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.188);
+}
+
+header a {
+    margin-left: 10px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 15px;
+    width: 60%;
+}
+
+.logo {
+    width: 5%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+}
+
+.botao1 {
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    background-color: rgba(0, 46, 195, 0.761);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+
+.botao2 {
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    background-color: #d53b00;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+#cabeca2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#cabeca2 img {
+    width: 140px;
+}
+
+.logogod{
+    width: 100%;
+    position: relative;
+    left: 30px;
+}
+
+.botao-comprar{
+    position: absolute;
+    left: 85vw;
+}
+
+.botao-iniciar{
+    position: absolute;
+    left: 82vw;
+    top: 10px;
+}
+
+.wrapper{
+    
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 1px;/* proporção do eixo x */
+    transform-style: preserve-3d; /*mexe nos elementos filhos*/
+}
+
+.secao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 350px;
+    margin-bottom: 2500px;
+    position: relative;
+    height: 100vh;
+    min-height: 2px;
+    transform-style: inherit;
+   
+    
+}
+
+.secao::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: translateZ(-0.5px)scale(1.5);
+    box-shadow: 10px 2px 25px rgba(0, 0, 0, 0.369);
+}
+
+.conteudo {
+    position: absolute; /* mexer com o elemento a vontade na pela tele*/
+    top: 5%;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 28px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+#p1{
+    width: 45%;
+    position: relative;
+    left: 10px;
+    top: -200px;
+}
+
+.fundo1::before{
+    background-image: url(img/img1.webp); 
+    width: 90%;
+    
+}
+
+#p2{
+    width: 45%;
+    position: relative;
+    left: 100px;
+    top: -2000px;
+}
+
+.fundo2::before{
+    background-image: url(img/img2.webp);
+    width: 200%;
+}
+
+#p3{
+    width: 45%;
+    position: relative;
+    left: 100px;
+    top: -3800px;
+    
+}
+
+.fundo3::before{
+    background-image: url(img/img3.webp);
+    width: 200%;
+}
+
+
+
+
+
+
+
